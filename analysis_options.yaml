@@ -1,0 +1,35 @@
+# Este arquivo configura o analisador para verificar erros, avisos e boas práticas no código Dart.
+
+# Inclui o conjunto de lints recomendados para aplicativos Flutter.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Desativa a regra que evita o uso de `print` no código.
+    avoid_print: false
+
+    # Habilita a regra que prefere o uso de aspas simples em vez de aspas duplas.
+    prefer_single_quotes: true
+
+    # Regras adicionais para melhorar o código:
+    
+    # Exige que os parâmetros nomeados tenham um valor padrão.
+    always_declare_return_types: true
+    
+    # Exige que todos os métodos públicos tenham documentação.
+    public_member_api_docs: true
+    
+    # Garante que todos os campos e métodos tenham tipos de retorno explícitos.
+    always_specify_types: true
+    
+    # Enforce trailing commas in multiline collections, parameters, etc.
+    always_put_control_body_on_new_line: true
+
+    # Desativa a regra que exige o uso de `const` em variáveis imutáveis.
+    prefer_const_declarations: false
+
+    # Exige que constantes em coleções sejam explícitas.
+    prefer_const_literals_to_create_immutables: true
+
+    # Exige que os `iterables` usem o método `isEmpty` em vez de `length > 0`.
+    prefer_is_empty: true
